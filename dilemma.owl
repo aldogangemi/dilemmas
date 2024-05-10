@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl/"
+     xml:base="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl"/>
+        <cpannotationschema:scenarios>Some examples of dilemmas that can be analysed using the ontology. The examples are given in tab-separated tables.
+Personal:
+
+Dilemma	First Alternative Course of Action	Second Alternative Course of Action	Consequence if First Course Taken	Consequence if Second Course Taken	Possible Criteria/Ideology for Decision
+Choosing a Career	Follow a high-paying job	Pursue a passion with lower pay	Financial security, potentially less satisfaction	Personal fulfillment, financial risk	Practicality vs. Passion
+Romantic Relationship Commitment	Commit to a serious relationship	Remain single to focus on personal growth	Deepened relational connection, less personal time	More personal freedom, potential loneliness	Commitment vs. Independence
+Relocation for Work	Move to a new city for a job opportunity	Stay in hometown with less opportunities	Career advancement, away from family	Less career growth, maintain close family ties	Career Growth vs. Family Commitment
+Handling a Windfall	Invest or save the majority of unexpected gain	Spend on immediate pleasures or needs	Long-term financial security, delayed gratification	Immediate satisfaction, potential future financial needs	Prudence vs. Gratification
+Elderly Parent Care	Move parents into a care facility	Care for parents at home	Professional care for parents, personal time maintained	Personal strain, strengthened family bonds	Responsibility vs. Personal Limitations
+Friendship vs. Honesty	Confront a friend about harmful behavior	Overlook the behavior to maintain the friendship	Potential conflict, healthier dynamics	Maintained friendship, possibly enabling harm	Honesty vs. Loyalty
+Health vs. Pleasure	Adopt a strict, healthy lifestyle	Continue a less healthy, enjoyable lifestyle	Improved long-term health, potential resentment	Immediate enjoyment, potential health risks	Health Consciousness vs. Enjoyment
+Returning Lost Money	Return a large sum of found money	Keep the money for personal use	Ethical peace of mind, loss of financial gain	Financial gain, ethical discomfort	Integrity vs. Opportunity
+Educational Sacrifice	Sacrifice personal time for further education	Maintain current lifestyle without advancement	Potential career improvement, personal sacrifice	Continued comfort, possible stagnation	Self-Improvement vs. Comfort
+Life-Work Balance	Prioritize work to climb career ladder	Balance work with personal life	Career success, potential personal neglect	Less career focus, improved personal life	Ambition vs. Personal Well-being
+
+Social/existential:
+
+Dilemma	First Alternative Course of Action	Second Alternative Course of Action	Consequence if First Course Taken	Consequence if Second Course Taken	Possible Criteria/Ideology for Decision
+Climate Change Action	Implement drastic environmental policies	Maintain current economic policies	Short-term economic hardship, long-term sustainability	Continued environmental degradation	Sustainability Ethics
+Population Control	Enforce strict birth control policies	Allow natural population growth	Reduced resources strain, potential human rights concerns	Overpopulation, resource depletion	Utilitarianism vs. Human Rights
+Universal Basic Income	Introduce a universal basic income	Maintain traditional welfare systems	Increased financial security, potential economic inflation	Existing inequality possibly persists	Social Equity vs. Economic Stability
+Artificial Intelligence Governance	Strict global regulation of AI development	Encourage unregulated AI innovation	Slower AI progress, more safety	Faster innovation, risk of AI autonomy	Precautionary Principle
+Digital Privacy vs. Security	Increase surveillance for national security	Protect digital privacy at the cost of security	Enhanced security, reduced privacy	Preserved privacy, potential security risks	Privacy Rights vs. National Security
+Space Colonization	Aggressively colonize other planets	Focus on Earth&apos;s sustainability first	Potential new resources and habitations, high cost	Earth-focused solutions, missed space opportunities	Expansionism vs. Conservationism
+Genetic Engineering in Humans	Allow genetic modifications for health improvements	Ban genetic modifications due to ethical concerns	Possible eradication of diseases, ethical dilemmas	Continued natural genetic diseases, preserve genetic diversity	Bioethics vs. Technological Progress
+Cultural Preservation vs. Globalization	Actively preserve distinct cultural identities	Embrace global cultural homogenization	Maintained cultural diversity, potential isolationism	Increased global unity, loss of cultures	Cultural Relativism vs. Globalism
+Resource Allocation in Healthcare	Prioritize treatment for the young and healthy	Provide equal treatment to all, regardless of prognosis	Maximized societal productivity, ageism concerns	Potential wasted resources, upheld equality	Utilitarianism vs. Egalitarianism
+Technological Unemployment	Invest in technology even if it leads to job loss	Limit technology to preserve jobs	Increased automation and efficiency, unemployment risks	Slower technological progress, preserved employment	Progressivism vs. Protectionism
+
+Ethical/Moral:
+
+Dilemma	First Alternative Course of Action	Second Alternative Course of Action	Consequence if First Course Taken	Consequence if Second Course Taken	Possible Criteria/Ideology for Decision
+Trolley Problem	Divert trolley to kill one person	Do nothing; trolley kills five people	One person dies	Five people die	Utilitarianism
+Heinz Dilemma	Steal medicine to save spouse	Do not steal; unable to afford medicine	Saves spouse but risks jail	Spouse potentially dies	Deontology
+Self-driving Car Decision	Car swerves to avoid pedestrians, hits wall	Car continues, hitting pedestrians	Passengers at risk	Pedestrians at risk	Virtue Ethics
+Confidential Information Leak	Report a leak of sensitive information	Ignore the leak to protect your job	Potential job loss, protect integrity	Keep job, compromise ethics	Kantian Ethics
+Robot Rights	Grant full rights to sentient AI	Treat AI as property without rights	Legal and societal complexities	Potential exploitation of sentient beings	Animal Rights Ethics
+Fair Hiring Practices	Hire a less qualified minority candidate	Hire the most qualified non-minority candidate	Promote diversity, possibly lower performance	Higher performance, potential inequality	Affirmative Action
+End-of-Life Decisions	Administer life-ending treatment at request	Continue life support against patient’s wish	Patient’s suffering ends, ethical questions	Patient lives, against their will	Bioethics
+Academic Dishonesty	Report a student cheating on an exam	Ignore it to maintain peer relationships	Uphold academic integrity, strain relationships	Possible academic dishonesty continues	Academic Integrity
+Animal Testing	Conduct necessary testing for medical advancement	Refuse testing, slow medical progress	Medical advancement, ethical concerns	Slower medical progress, ethical high ground	Utilitarianism vs. Animal Rights
+Corporate Espionage	Engage in espionage to gain market advantage	Compete without engaging in espionage	Possible competitive edge, legal risks	Potentially less competitive, maintain integrity	Business Ethics</cpannotationschema:scenarios>
+        <rdfs:comment>A draft ontology of dilemmas, reusing some ontology design patterns (descriptions and situations, sequence, control flow, etc.).
+It is intended to be specialized for specific types of dilemmas, and used to quer,y and reason over, dilemmatic situations in social or personal contexts (ethical, moral, social, institutional, existential, personal, etc.).</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:46Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo"/>
+        </owl:propertyChainAxiom>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:06Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:06:26Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:28:25Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T14:57:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#satisfies"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:07:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:02:48Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:34:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleySituation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleySituation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:12:51Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:11:20Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotPullLever -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotPullLever">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask"/>
+        <owl:differentFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PullLever"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:11:51Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PullLever -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PullLever">
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:11:35Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyProblem -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyProblem">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:10:38Z</dc:date>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
