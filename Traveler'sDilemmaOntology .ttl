@@ -1,0 +1,396 @@
+@prefix : <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/> .
+
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44> rdf:type owl:Ontology ;
+                                                                           owl:imports <http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl> ;
+                                                                           rdfs:comment """This is an ontology about the \"Traveler's dilemma\", that in game theory is considered a non-zero-sum game in which each player proposes a payoff and the lower of the two proposals wins. This dilemma highlights how the rational behavior predicted and theorized by mathematical game theory can sometimes conflict with intuition regarding what is more or less \"convenient\". 
+The original game scenario was formulated in 1994 by Kaushik Basu.""" .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion
+<http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome
+<http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Amount_of_Bonus/Penalty
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Amount_of_Bonus/Penalty> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion> ;
+                                                                                                  rdfs:comment "Experiments have shown that as the amount of bonus gets higher, more people are inclined to choose a low number." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Bonus/Penalty
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Bonus/Penalty> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> ;
+                                                                                        rdfs:comment "The traveler who writes down a value lower than the one the other traveler writes gets a bonus. The one who writes the highest value gets a penalty of the same amount as the bonus." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler1's
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler1's> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler2'sWrittenValue> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler2's
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler2's> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler1'sWrittenValue> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#High_Bonus/Penalty
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#High_Bonus/Penalty> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Amount_of_Bonus/Penalty> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler1's
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler1's> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler2'sWrittenValue> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler2's
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler2's> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler1'sWrittenValue> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler1's
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler1's> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler2'sWrittenValue> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler2's
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler2's> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler1'sWrittenValue> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Small_Bonus/Penalty
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Small_Bonus/Penalty> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Amount_of_Bonus/Penalty> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler'sDilemmaSituation
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler'sDilemmaSituation> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation> ;
+                                                                                                     rdfs:comment "This situation is the setting for the \"Traveler's dilemma\"." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler1'sWrittenValue
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler1'sWrittenValue> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf :WrittenValue .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler2'sWrittenValue
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Traveler2'sWrittenValue> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf :WrittenValue .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/AirCompany
+:AirCompany rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> ;
+                              owl:someValuesFrom :Refund
+                            ] ;
+            rdfs:comment "The airline company of the flight the two travelers were in." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/AirTravel
+:AirTravel rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> ;
+           rdfs:comment "Both travelers are returning from the same trip, located in the same area, and carrying each a suitcase full with the same exact objects, which have the same values." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Bayesian_Nash_Equilibrium
+:Bayesian_Nash_Equilibrium rdf:type owl:Class ;
+                           rdfs:subClassOf :Nash_Equilibrium ;
+                           rdfs:comment "In a non-Bayesian game, a strategy profile is a Nash equilibrium if every strategy in that profile is a best response to every other strategy in the profile; i.e., there is no strategy that a player could play that would yield a higher payoff, given all the strategies played by the other players." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/EqualPayoff
+:EqualPayoff rdf:type owl:Class ;
+             rdfs:subClassOf :Payoff ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#describes> ;
+                               owl:allValuesFrom <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler1's>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#describes> ;
+                               owl:allValuesFrom <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler2's>
+                             ] ;
+             owl:disjointWith :NotEqualPayoff ;
+             rdfs:comment "The payoff is equal only if the two travelers have written the same price." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Game_Theory
+:Game_Theory rdf:type owl:Class ;
+             owl:equivalentClass :Rationality ;
+             rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion> ;
+             rdfs:comment "According to Game Theory, the most rational choice for both of the agents to make would be to pick the lowest number of the range, in order to reach the so-called \"Nash Equilibrium\"." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/HighballPlayer
+:HighballPlayer rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> ;
+                rdfs:comment "Between the two travelers, the highball player is the one who writes down the highest number to propose as payoff." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/LowballPlayer
+:LowballPlayer rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> ;
+               rdfs:comment "Between the two travelers, the lowball player is the one who writes down the lowest number to propose as payoff." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/LuggageLoss
+:LuggageLoss rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows> ;
+                               owl:someValuesFrom :AirTravel
+                             ] ;
+             rdfs:comment "The airline company loses the two traveler's suitcases." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Nash_Equilibrium
+:Nash_Equilibrium rdf:type owl:Class ;
+                  rdfs:subClassOf :Game_Theory ;
+                  rdfs:comment """For an understanding of why 50 is the Nash equilibrium consider the following proof:
+Alice's first thought is to quote 300, the maximum permissible value.
+On reflection, though, she realizes that her fellow traveler, George, might also quote 300. And so Alice changes her mind, and decides to quote 299, which, if George quotes 300, will pay 339. But 'low-balling' leads to the worst possible outcome. Rational people will use Muth Rational Expectations- i.e. both will choose 300 as this maximizes their individual and collective benefit.
+But George, being in an identical position to Alice, might also think of quoting 299. And so Alice changes her mind, and decides to quote 298, which, if George quotes 299, will pay 338. This is greater than the 299 Alice would receive if both she and George quoted 299.
+This cycle of thought continues, until Alice finally decides to quote just 50—the minimum permissible price.""" .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/NotEqualPayoff
+:NotEqualPayoff rdf:type owl:Class ;
+                rdfs:subClassOf :Payoff ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#describes> ;
+                                  owl:allValuesFrom <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler1's>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#describes> ;
+                                  owl:allValuesFrom <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler2's>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#describes> ;
+                                  owl:allValuesFrom <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler1's>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#describes> ;
+                                  owl:allValuesFrom <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler2's>
+                                ] ;
+                rdfs:comment "The payoff is not equal if the two travelers have written different prices. For example, in this case the lowball player gets the lowest written value along with a bonus of 40 dollars, while the highball player gets the lowest written value (the one the other agent wrote) minus 40 dollars." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Payoff
+:Payoff rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome> ;
+        rdfs:comment "The payoff the two travelers are going to get as refund for their suitcases." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/PayoffRange
+:PayoffRange rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> ;
+             rdfs:comment "The airline company indicates a range of numbers to choose from." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Personality
+:Personality rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion> ;
+             rdfs:comment "Personality might influence the choice. For example, a selfish agent may be tempted to damage the other agent by choosing a low number in order to make the other deserve the penalty." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Rationality
+:Rationality rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion> ;
+             rdfs:comment "According to Game Theory, the most rational choice for both of the agents to make would be to pick the lowest number of the range, in order to reach the so-called \"Nash Equilibrium\"." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Refund
+:Refund rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows> ;
+                          owl:someValuesFrom :LuggageLoss
+                        ] ;
+        rdfs:comment "The airline company promises to the travelers to refund their suitcases; since the company doesn't know how much the suitcases were worth, the two travelers are asked to write down each on their own the value of the missing objects, without communicating with eachother." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Social_Criterion
+:Social_Criterion rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion> ;
+                  rdfs:comment "A class of criteria based on what's the perception of a person towards another person, or towards the entire human species; in this case, a negative view of the human nature can lead someone to distrust and urge to damage the other's interests in order to defend theirs." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Suitcase
+:Suitcase rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> ;
+          rdfs:comment "The suitcases of the two travelers." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/SuitcaseValue
+:SuitcaseValue rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> ;
+               rdfs:comment "The real value of the two suitcases, that are worth the same exact money." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Traveler
+:Traveler rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> ;
+                            owl:someValuesFrom :AirTravel
+                          ] ;
+          rdfs:comment "A person travelling by plane." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Traveler1
+:Traveler1 rdf:type owl:Class ;
+           rdfs:subClassOf :Traveler .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Traveler2
+:Traveler2 rdf:type owl:Class ;
+           rdfs:subClassOf :Traveler .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Writing_task
+:Writing_task rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DeliberationTask> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo> ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Payoff
+                              ] ;
+              rdfs:comment "Both travelers, who are sitting in separate rooms, are asked to choose and write down a number from 50 to 300." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/WrittenValue
+:WrittenValue rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> ;
+              rdfs:comment "The value each of the two travelers choose to write." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#2
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#2> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Small_Bonus/Penalty> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#40
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#40> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#Bonus/Penalty> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#50-300
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#50-300> rdf:type owl:NamedIndividual ,
+                                                                                          :PayoffRange .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#80
+<http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#80> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#High_Bonus/Penalty> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/AirlineCompany1
+:AirlineCompany1 rdf:type owl:NamedIndividual ,
+                          :AirCompany .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Alice
+:Alice rdf:type owl:NamedIndividual ,
+                :Traveler1 .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/AliceSuitcase
+:AliceSuitcase rdf:type owl:NamedIndividual ,
+                        :Suitcase .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/AliceSuitcaseValue
+:AliceSuitcaseValue rdf:type owl:NamedIndividual ,
+                             :SuitcaseValue ;
+                    owl:sameAs :GeorgeSuitcaseValue .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/GeorgeSuitcaseValue
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Alice_writes_200
+:Alice_writes_200 rdf:type owl:NamedIndividual ,
+                           <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler2's> ,
+                           <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler1's> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Alice_writes_50
+:Alice_writes_50 rdf:type owl:NamedIndividual ,
+                          <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler1's> ,
+                          <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler2's> ,
+                          <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler1's> ,
+                          <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler2's> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Altruistic
+:Altruistic rdf:type owl:NamedIndividual ,
+                     :Personality .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/George
+:George rdf:type owl:NamedIndividual ,
+                 :Traveler2 .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/GeorgeSuitcase
+:GeorgeSuitcase rdf:type owl:NamedIndividual ,
+                         :Suitcase .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/GeorgeSuitcaseValue
+:GeorgeSuitcaseValue rdf:type owl:NamedIndividual ,
+                              :SuitcaseValue .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/George_writes_200
+:George_writes_200 rdf:type owl:NamedIndividual ,
+                            <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler1's> ,
+                            <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler2's> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/George_writes_50
+:George_writes_50 rdf:type owl:NamedIndividual ,
+                           <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler1's> ,
+                           <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#EqualToTraveler2's> ,
+                           <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#HigherThanTraveler2's> ,
+                           <http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44#LowerThanTraveler1's> .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Selfish
+:Selfish rdf:type owl:NamedIndividual ,
+                  :Personality .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Thinking_badly_of_the_other
+:Thinking_badly_of_the_other rdf:type owl:NamedIndividual ,
+                                      :Social_Criterion .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/Thinking_well_of_the_other
+:Thinking_well_of_the_other rdf:type owl:NamedIndividual ,
+                                     :Social_Criterion .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2024/6/untitled-ontology-44/WritingDown_Value
+:WritingDown_Value rdf:type owl:NamedIndividual ,
+                            :Writing_task .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
