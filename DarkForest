@@ -1,0 +1,912 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemmadarkforest.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemmadarkforest.owl">
+    <Prefix name="" IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemmadarkforest.owl/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="cpannotationschema" IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"/>
+    <Prefix name="coredilemmadarkforest" IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemmadarkforest.owl#"/>
+    <Import>http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl</Import>
+    <Import>http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:scenarios"/>
+        <Literal>Dilemma: How to behave within a Dark Forest
+First Alternative Course of Action: Civilization 1 shows itself
+Possibile Criteria for First Course: Possible Groundbreaking Discovery, 
+Consequence if First Course Taken: Civilization 1 is not found,  Civilization 1 is found
+Second Alternative Course of Action: Civilization 1 hides
+Consequence if Second Course taken:</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This is an Ontology of one of the dilemmas originated by a solution to Fermi&apos;s Paradox, the Dark Forest. The chain of reasoning of Fermi&apos;s Paradox is the following: there are billions of stars, some of these stars have planets similar to Earth in a cirumstellar habitable zone, many planets are older than Earth and might have developed life and civilizations, some civilizations might have developed interstellar travel, the Milky Way could be travelled in its entirety in a few million years, therefore Earth should have had contact with some civilizations, but there is no convincing evidence that this has happend.
+
+One of the solutions to Fermi&apos;s Paradox is the Great Filter, theory stating that in the development of life starting from the earliest stages of organisms till the higest leves of development of a civilizations, there is a barrier to evolution that makes a civilization able to travel between starts incredibly rare. According to this idea, the Great Filter could be behind us (for example development of complex organisms might be rarer than we thought, or the emergence of intelligence might not be very likely to arise) or ahead of us (the advancement of technology reaches a limit and makes it impossible to discover interstellar travel).
+
+The Dark Forest is a further solution to Fermi&apos;s Paradox, and introduces the concept of the universe as a dark forest filled with hunters. Each hunter is aware that doing too much noise might attract another hunter, whose intentios are unknown. Upon finding another hunter the options are eliminating it in fear of what they could do, or attempting a peaceful contact, which might end up in conflict.
+
+In the book &quot;The Dark Forest&quot;, Liu Cixin illustrates the axioms of a theoretical science, the Cosmic Sociology. The cosmic sociology supposes that a vast number of civilizations are distributed throughout the universe. These civilizations make up the body of a cosmic society, a kind of supersociety studied by the cosmic sociology. As the frame of reference is immense and so the number of possible civilizations, the peculiarities of each civilization do not matter much, and just their overall behaviour has to be studied. There are two axioms for any cosmic civilization: survival is the primary need of civilization, a civilization continously grows and expands but the total matter in the universe remains constant.
+
+The first axiom extends the concept of evolution to the whole universe. The primary need of a civilization must be its survival, otherwise it would not survive and would not be able to interact with others. The second axiom poses a limit to the impetum of growth and expansion that each form of life has, by stating how the potential infinite growth is limited by the finite amount of matter in the universe. 
+
+Two further important concepts for cosmic sociology are: the chains of suspicion and the technological explosion. The chains of suspicious are nothing dissimilar to what happens on Earth between humans, A is unaware of what B thinks and therefore starts doubting its intentions, and cause A knows that B does not know what A thinks, A might think that B doubts A. The chains of suspicioun is a vicious circles that in a human setting cannot grow till a certain level, being in the same time-frame, having a similar brain structure and speaking similar and traduceable languages ends at a certain point a chain of suspicion. In an interstellar setting two civilizations communicating would face further complications. The spacial distance comports a delay in communications, and to establish the most basic interaction years and years would have to pass. Not only that but the moral values and languages of the two civilaztions might differ enourmously, making a misunderstanding an ever more likely event. It does not end here as the other concept of technological explosion becomes topical. The human beings have been improving technologically since their birth, but it has not been a constanct growth, rather a technological explosion that made us able in a few centuries to build ever more powerful weapons and means of transport. In a matter of decades or centuries (time frames that are not too long from a cosmic perspective) an harmells civilization could discover technologies able to destroy far away planets. Therefore even two civilizations interact the first one to shoot is going to be the one ensuring its survival. And as the universe is huge, even if just a 1% of civilizations are able to locate and destroy possible threats, it is enough to leave in a state of fear everybody else that acknowledges the dark forest theory.
+
+Here comes the Dark Forest Dilemma; staying hidden or yell outloud. By staying hidden a civilization ensures their survival, but is never going to be able to communicate with another species. By yelling outloud a civilization could find somebody to interact with but would risk its own annihilation.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Alliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Annihilation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Chains_of_suspicion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Finite_Matter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Interstellar_Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#One_Hostile_Civilization_Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Partial_Annihilation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Sense_of_wonder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Silence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Survival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Technological_explosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Total_Annihilation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleySituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Optimism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Pessimism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Befriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dark_Forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ignore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Safety"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotPullLever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PullLever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyProblem"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#satisfies"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Alliance"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Alliance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="#Befriend"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Annihilation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Annihilation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="#Attack"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Chains_of_suspicion"/>
+        <Class IRI="#Dark_Forest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_1"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Survival"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_2"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+            <Class IRI="#Attack"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+            <Class IRI="#Befriend"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+            <Class IRI="#Ignore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Survival"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                    <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Finite_Matter"/>
+        <Class IRI="#Dark_Forest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Pessimism"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="#Safety"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Silence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Interstellar_Communication"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Chains_of_suspicion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#One_Hostile_Civilization_Risk"/>
+        <Class IRI="#Dark_Forest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Partial_Annihilation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Annihilation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Sense_of_wonder"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Sense_of_wonder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Sense_of_wonder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn"/>
+            <Class IRI="#Befriend"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Sense_of_wonder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Optimism"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"/>
+            <Class IRI="#Attack"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"/>
+            <Class IRI="#Befriend"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"/>
+            <Class IRI="#Ignore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Silence"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Silence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Silence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="#Ignore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Silence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"/>
+            <Class IRI="#Ignore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Survival"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Survival"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_1"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Survival"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_2"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Technological_explosion"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Chains_of_suspicion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Total_Annihilation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Annihilation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleySituation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleySituation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                    <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Optimism"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Optimism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Optimism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+            <Class IRI="#Dark_Forest"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Pessimism"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Pessimism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Pessimism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+            <Class IRI="#Dark_Forest"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attack"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Chains_of_suspicion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Survival"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Pessimism"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Annihilation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Befriend"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Befriend"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Befriend"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Optimism"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Befriend"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Alliance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dark_Forest"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ignore"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ignore"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#One_Hostile_Civilization_Risk"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ignore"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn"/>
+            <Class IRI="#Attack"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#isConceptUsedIn"/>
+            <Class IRI="#Ignore"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Survival"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotPullLever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyProblem"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotPullLever"/>
+        <NamedIndividual IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PullLever"/>
+    </DifferentIndividuals>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Alliance</IRI>
+        <Literal>An alliance takes place when a civilization befriends another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Annihilation</IRI>
+        <Literal>The destruction of a civilization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Chains_of_suspicion</IRI>
+        <Literal>A chain of suspiscion takes place between two individuals who are not aware of each other intentions. Each one doubts the intention of the other and start thinking what the other is thinking they are thinking, in a potential endless chain. The doubts and the suspicion rises between species with different cultures who use interstellar communication,  which implicates that years are necessary to answer and receive any further message.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:06:26Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_1</IRI>
+        <Literal>Civilization 1 is a civilization who believes in the Dark Forest Theory and has to decide wheter to hide or reveal itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Civilization_2</IRI>
+        <Literal>Civilization 2 is a civilization that might be able to know the location of Civilization1 and might be able to destroy it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:28:25Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T14:57:29Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:07:29Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Finite_Matter</IRI>
+        <Literal>The universe has a finite amount of matter which poses a limit to the potentially endless impetum of growth and expansion of any civilization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Hiding</IRI>
+        <Literal>A civiliaztion hides by trying to avoid sending any intentional and unintentional signals to any potential other civilization. It can vary from trying to stop sending messages to find friendly civilizations to avoid any kind of electromagnetic activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Interstellar_Communication</IRI>
+        <Literal>Any interstellar messagge sent by one civilization can be detected by potentially endless other civilizations. An interstellar communication between two civilizations would take years to exchange the simplest greeting. An interstellar communication between the Solar System and Alpha Centauri would take at least four years of waiting for every single message.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotPullLever</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotPullLever</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:11:51Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#One_Hostile_Civilization_Risk</IRI>
+        <Literal>Even just one hostile civilization in a universe fully inhabited by friendly and peaceful civilization is a risk to consider before attempting any interstellar communication. A friendly message sent to the universe might be seen as inoffensive and peaceful by most species, but if even just one decides to act on it and destroy the civilization that sent it as a possible threat, then not only every first message is a huge risk but also any reply. One bad actor is enough to undermine the good intention of all the rest of the universe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:02:48Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Partial_Annihilation</IRI>
+        <Literal>The annihilation of a civilization can be partial as for example for programmed destruction of key infrastructures for interstellar war or destruction of only a part of the members of the species.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PullLever</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PullLever</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:11:35Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Sense_of_wonder</IRI>
+        <Literal>The sense of wonder is what makes a civilization attracted by novelty and what is hidden in the depth of the universe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Showing</IRI>
+        <Literal>A civilization can decide to show itself by trying to send an interstellar communication in hope of being heard by another civilization in the universe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Silence</IRI>
+        <Literal>It is possible that upon trying to communicate in a potential dark forest nobody would neither reply nor attack the civilization, thus ending in no concrete consequences to an interstellar message.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Survival</IRI>
+        <Literal>The primary need of a civilization must be its survival, otherwise it would not live and would not be able to interact with others. A species without a strong survival instict is not likely to last long.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:34:03Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Technological_explosion</IRI>
+        <Literal>Technological explosions are likely to happen in a civilization and make it rapidly advance. A civilization can turn from inoffensive to extremely dangerous in a relative short time compared to the time needed for interstellar communication and interstellar travel, making any civilization a potential threat even if initially seen as inoffensive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Total_Annihilation</IRI>
+        <Literal>The annihilation of a civilization can be total as in the total destruction of their planet, or a total elimination of the members of its species.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyProblem</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyProblem</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:10:38Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleySituation</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleySituation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:12:51Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TrolleyTask</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:11:20Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Optimism</IRI>
+        <Literal>The view of universal optimism sees most civilization in the universe as interested in befriending one another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Universal_Pessimism</IRI>
+        <Literal>The view of universal pessimism sees most potential civilizations in the universe as primarily selfish and ready to destroy any possible threat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:46Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:06Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attack</IRI>
+        <Literal>Civilization 2 upon becoming aware of the existence of civilization 1 can decide to attack it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Befriend</IRI>
+        <Literal>Upon becoming aware of the existence of civilization 1, civilization 2 can decide to attempt an approach of befriendment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dark_Forest</IRI>
+        <Literal>The dark forest is a theory that tries to give a solution to the Fermi&apos;s Paradox.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ignore</IRI>
+        <Literal>Civilization 2 upon becoming aware of civilization 1 can decide to ignore it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Safety</IRI>
+        <Literal>The safety of a civilization follows its survival instict, it is the condition of being protected from the main danger of the dark forest, death.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
