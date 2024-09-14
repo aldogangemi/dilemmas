@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl/"
+     xml:base="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:description="http://www.ontologydesignpatterns.org/cp/owl/description.owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl"/>
+        <dc:creator>Marco Di Ilio</dc:creator>
+        <rdfs:comment>This is an ontology about the Centipede&apos;s Dilemma. It is a short poem that has lent its name to a psychological effect called the centipede effect or centipede syndrome. The centipede effect occurs when a normally automatic or unconscious activity is disrupted by consciousness of it or reflection on it. For example, a golfer thinking too closely about their swing or someone thinking too much about how they knot their tie may find their performance of the task impaired. The effect is also known as hyperreflection or Humphrey&apos;s law after English psychologist George Humphrey, who propounded it in 1923. As he wrote of the poem, &quot;This is a most psychological rhyme. It contains a profound truth which is illustrated daily in the lives of all of us&quot;. The effect is the reverse of a solvitur ambulando.
+The short poem, attributed to Katherine Craster, is:
+
+A centipede was happy – quite!
+Until a toad in fun
+Said, &quot;Pray, which leg moves after which?&quot;
+This raised her doubts to such a pitch,
+She fell exhausted in the ditch
+Not knowing how to run.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:46Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo"/>
+        </owl:propertyChainAxiom>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:06Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ActionCriteria -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ActionCriteria">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#KnowledgeCriteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Centipede -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Centipede">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CentipedeSituation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CentipedeSituation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CentipedeTask -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CentipedeTask">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:06:26Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:28:25Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T14:57:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#satisfies"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:07:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#KnowledgeCriteria -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#KnowledgeCriteria">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:02:48Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:34:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Centipede -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Centipede">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Centipede"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CentipedeProblem -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CentipedeProblem">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+        <description:defines rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#KnowHow"/>
+        <description:defines rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotKnowHow"/>
+        <description:defines rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotRun"/>
+        <description:defines rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Run"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#KnowHow -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#KnowHow">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DecisionActivity"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#KnowledgeCriteria"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        <owl:sameAs rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotRun"/>
+        <owl:differentFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotKnowHow"/>
+        <owl:differentFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Run"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotRun -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotRun"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotKnowHow -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotKnowHow">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ActionCriteria"/>
+        <owl:sameAs rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Run"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Run -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Run"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotRun -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotRun">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#KnowledgeCriteria"/>
+        <owl:differentFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Run"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Run -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Run">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DecisionActivity"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ActionCriteria"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
