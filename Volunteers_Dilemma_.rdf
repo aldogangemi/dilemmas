@@ -1,0 +1,833 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl/"
+     xml:base="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment>This ontology is about volunteer&apos;s dilemma. In this dilemma an individual is asked to pay a little price in order for everyone in his group, to gain a higher benefit. It&apos;s a Game theory problem and the Nash equilibrium seems to involve randomization. In &quot;An experimental examination of the volunteer&apos;s dilemma&quot;, a paper published in &quot;Games and economics behavior&quot; 102 in 2017 by J. K. Goeree, C. A. Holt and A. M. Smith, is said that, in order to explain the experimental outcome of the dilemma, taking in consideration of the &quot;noise&quot; that occurs in larger group is needed. In fact the expected outcome of the dilemma is that, with a bigger group, the volunteer rate will be smaller, and the probability of having no volunteer is higher. However, the experiments reveal that, when the number of the people involved rises, as expected, the volunteer rate decreases, but the probability of having no volunteers decreases, too.
+
+The first author who studied this type of social dilemma is A. Diekmann, who in 1985 published &quot;volunteer&apos;s dilemma&quot; in &quot;The journal of conficlt resolution&quot; vol. 29 n. 4.
+
+A real-world scenario including the volunteer&apos;s dilemma is, for example, one in which in a neighborhood someone has to call the energetic provider in order to resolve an electric fail.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#satisfies -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#satisfies"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:46Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#exists_if -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#exists_if">
+        <dc:creator>Francesco Bergamschi</dc:creator>
+        <rdfs:comment xml:lang="en">A relation between a role and an outcome. An example is the role: &quot;pork&quot; that exists only if &quot;someone killed a pig&quot;.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#hasOutcome">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo"/>
+        </owl:propertyChainAxiom>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:06Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#receive -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#receive">
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">A relation between two objects in which one  of them recieves the other one. For example, if I buy an apple, on one hand I receive an apple and, on the other hand, the seller receives money.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Volunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#receive"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CostOfAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DecisionActivity -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DecisionActivity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Volunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choosing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Benefit -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Benefit">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#exists_if"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SomeoneVolunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The benefit that the action will provide to every member of the group. An example is when someone needs to pay 0.20$ in order to obtain 1$ for every member of the group. The benefit will be 1$.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:06:26Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ChooseToVolunteer -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ChooseToVolunteer">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DeliberationTask"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choosing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The choice of the single individual to volunteer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choosing -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choosing">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#BooleanCaseTask"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyPrecedes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ChooseToVolunteer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyPrecedes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotChooseToVolunteer"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A boolean case task that consists in choosing whether to volunteer or not. It starts a deliberation task:&quot;ChooseToVolunteer&quot; or &quot;NotChooseToVolunteer&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CostBenefitAnalysis -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CostBenefitAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Every individual in the group can make a decision based upon a personal cost-benefit analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CostOfAction -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CostOfAction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#exists_if"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SomeoneVolunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The action that provides the benefit for the group is associated to a cost, tipically a little one compared to the benefit. For example, in a scenario where someone needs to pay 0.20$ in order to obtain 1$ for every member of the group, the Cost of the action is 0.20$.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:28:25Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#usesConcept"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T14:57:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#satisfies"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Dilemma"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:07:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#GenerousApproach -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#GenerousApproach">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Someone is by nature more caregiving than others. In a larger group is possible that more people will be more generous and willing to pay the cost of the action, in order to give something to the group. This can explane why in the study of this dilemma, theory doesn&apos;t match practice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Group -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Group">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#receive"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Benefit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">A group of people where at least one volunteer is needed to provide a benefit for everyone.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NoOneVolunteer -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NoOneVolunteer">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">If there is no volunteer no one receives the benefit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotChooseToVolunteer -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotChooseToVolunteer">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DeliberationTask"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choosing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The choice of the single individual not to volunteer</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotVolunteer -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotVolunteer">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#exists_if"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NoOneVolunteer"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The individual who chooses not to volunteer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ObtainBenefit -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ObtainBenefit">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerTask"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PayingCost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotVolunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Volunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">After the cost is paid, everyone in the group obtains the benefit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Other -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Other">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Group"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotVolunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choosing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:02:48Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PayingCost -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PayingCost">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerTask"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerTask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ObtainBenefit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Volunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Paying the cost of volunteering.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SelfishCriterion -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SelfishCriterion">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Criterion"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">One possibility is that some individuals do not want to help the community, if that means they gain less than the others.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SomeoneVolunteer -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SomeoneVolunteer">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Outcome"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerTask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The outcome of someone volunteering is a benefit for everyone</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TaskDecision">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Aldo Gangemi</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:34:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ThinkingAboutVolunteering -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ThinkingAboutVolunteering">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DecisionActivity"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyPrecedes"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choosing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The action of thinking about whether to volunteer or not. It executes the case task of choosing which role do you want to have.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Volunteer -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Volunteer">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerTask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#exists_if"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SomeoneVolunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <cpannotationschema:hasAuthor>Francesco Bergamaschi</cpannotationschema:hasAuthor>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:comment>The individual who chooses to pay the cost in order to gain a benefit for the group.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerSituation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerSituation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#DilemmaticSituation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerTask"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The dilemma consists in choosing whether to volunteer and pay the cost or not, knowing that in this latter case probably someone else will do it.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerTask -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerTask">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ChooseToVolunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#causallyLinkedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SomeoneVolunteer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#BeingAnalytical -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#BeingAnalytical">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CostBenefitAnalysis"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">An analytical person can spend more time pondering whether to call the police or not. For example they might worry about the police being late.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#BeingGood -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#BeingGood">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#GenerousApproach"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Someone who is caregiving by nature will not blink twice and will immediately call the police.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#BeingLazy -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#BeingLazy">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SelfishCriterion"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Someone lazy will not call the police even if they are aware of the crime being perpetrated.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CallThePolice -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CallThePolice">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ChooseToVolunteer"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Once someone decides to volunteer, they&apos;ll call the police.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CallingOrNot -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CallingOrNot">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Choosing"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Anyone in the group who is aware of the crime, will probably think about whether to call or not the police.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CrimeContinue -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CrimeContinue">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NoOneVolunteer"/>
+        <rdfs:comment xml:lang="en">If no one decides to call the police, the crime happening will not be stopped.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CrimeInNeighborood -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CrimeInNeighborood">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerSituation"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">A dilemmatic situation where a crime is occuring and someone who&apos;s watching has to call the police.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ExplainToPolice -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ExplainToPolice">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PayingCost"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">If you&apos;re the one that chooses to call the police, they&apos;ll probably ask you some questions. Answering is the cost of you&apos;re action.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#GoodNieghbor -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#GoodNieghbor">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Volunteer"/>
+        <owl:differentFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#LazyNeighbor"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The neighbor who decides to volunteer and call the police. They can be more then one.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#HavingToCallPolice -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#HavingToCallPolice">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#CostOfAction"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">If you choose to volunteer you also choose to explain to the police what&apos;s happened.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#LazyNeighbor -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#LazyNeighbor">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotVolunteer"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The neighbor who chooses not to call the police. They can be more than one.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NeghborhoodMoreSecure -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NeghborhoodMoreSecure">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Benefit"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">If someone calls the police, in the future the entire neighborhood will result in a much more secure place.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Neighbor -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Neighbor">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Other"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">In this situation, someone who notices the crime.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Neighborhood -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Neighborhood">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#Group"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The group of people that notices the crime.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotCallThePolice -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotCallThePolice">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#NotChooseToVolunteer"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The choice of not to call the police.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PoliceArrive -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PoliceArrive">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ObtainBenefit"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Once someone calls the police, policemen will show up and possibly the crime will be stopped.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PoliceIsCalled -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#PoliceIsCalled">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#SomeoneVolunteer"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Since someone chooses to volunteer, the police will be called.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#QuestioningThemself -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#QuestioningThemself">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#ThinkingAboutVolunteering"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">Once you notice the crime, you can not simply ingore it, you&apos;ll question yourself and you will choose whato to do.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TalkToPolice -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#TalkToPolice">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#VolunteerTask"/>
+        <dc:creator>Francesco Bergamaschi</dc:creator>
+        <rdfs:comment xml:lang="en">The task the &quot;good&quot; neighbor is to explain to the police all that&apos;s happened.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
