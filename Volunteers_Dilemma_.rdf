@@ -87,6 +87,8 @@ A real-world scenario including the volunteer&apos;s dilemma is, for example, on
     <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/volunteersdilemma.owl#exists_if -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/volunteersdilemma.owl#exists_if">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/volunteersdilemma.owl#Outcome"/>
         <dc:creator>Francesco Bergamschi</dc:creator>
         <rdfs:comment xml:lang="en">A relation between a role and an outcome. An example is the role: &quot;pork&quot; that exists only if &quot;someone killed a pig&quot;.</rdfs:comment>
     </owl:ObjectProperty>
@@ -111,6 +113,8 @@ A real-world scenario including the volunteer&apos;s dilemma is, for example, on
     <!-- http://www.ontologydesignpatterns.org/ont/dilemmas/volunteersdilemma.owl#receive -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/volunteersdilemma.owl#receive">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"/>
         <dc:creator>Francesco Bergamaschi</dc:creator>
         <rdfs:comment xml:lang="en">A relation between two objects in which one  of them recieves the other one. For example, if I buy an apple, on one hand I receive an apple and, on the other hand, the seller receives money.</rdfs:comment>
     </owl:ObjectProperty>
@@ -360,7 +364,6 @@ A real-world scenario including the volunteer&apos;s dilemma is, for example, on
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dilemmas/volunteersdilemma.owl#NoOneVolunteer">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dilemmas/volunteersdilemma.owl#Outcome"/>
-
         <dc:creator>Francesco Bergamaschi</dc:creator>
         <rdfs:comment xml:lang="en">If there is no volunteer no one receives the benefit</rdfs:comment>
     </owl:Class>
@@ -539,7 +542,6 @@ A real-world scenario including the volunteer&apos;s dilemma is, for example, on
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DecisionActivity"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
-
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyPrecedes"/>
