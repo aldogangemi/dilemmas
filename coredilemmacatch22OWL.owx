@@ -1,0 +1,879 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl">
+    <Prefix name="" IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sequence" IRI="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"/>
+    <Prefix name="coredilemma" IRI="http://www.ontologydesignpatterns.org/ont/dilemmas/coredilemma.owl#"/>
+    <Prefix name="description" IRI="http://www.ontologydesignpatterns.org/cp/owl/description.owl#"/>
+    <Prefix name="cpannotationschema" IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"/>
+    <Import>http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl</Import>
+    <Import>http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cpannotationschema:scenarios"/>
+        <Literal>Some examples of dilemmas that can be analysed using the ontology. The examples are given in tab-separated tables.
+Personal:
+
+Dilemma	First Alternative Course of Action	Second Alternative Course of Action	Consequence if First Course Taken	Consequence if Second Course Taken	Possible Criteria/Ideology for Decision
+Choosing a Career	Follow a high-paying job	Pursue a passion with lower pay	Financial security, potentially less satisfaction	Personal fulfillment, financial risk	Practicality vs. Passion
+Romantic Relationship Commitment	Commit to a serious relationship	Remain single to focus on personal growth	Deepened relational connection, less personal time	More personal freedom, potential loneliness	Commitment vs. Independence
+Relocation for Work	Move to a new city for a job opportunity	Stay in hometown with less opportunities	Career advancement, away from family	Less career growth, maintain close family ties	Career Growth vs. Family Commitment
+Handling a Windfall	Invest or save the majority of unexpected gain	Spend on immediate pleasures or needs	Long-term financial security, delayed gratification	Immediate satisfaction, potential future financial needs	Prudence vs. Gratification
+Elderly Parent Care	Move parents into a care facility	Care for parents at home	Professional care for parents, personal time maintained	Personal strain, strengthened family bonds	Responsibility vs. Personal Limitations
+Friendship vs. Honesty	Confront a friend about harmful behavior	Overlook the behavior to maintain the friendship	Potential conflict, healthier dynamics	Maintained friendship, possibly enabling harm	Honesty vs. Loyalty
+Health vs. Pleasure	Adopt a strict, healthy lifestyle	Continue a less healthy, enjoyable lifestyle	Improved long-term health, potential resentment	Immediate enjoyment, potential health risks	Health Consciousness vs. Enjoyment
+Returning Lost Money	Return a large sum of found money	Keep the money for personal use	Ethical peace of mind, loss of financial gain	Financial gain, ethical discomfort	Integrity vs. Opportunity
+Educational Sacrifice	Sacrifice personal time for further education	Maintain current lifestyle without advancement	Potential career improvement, personal sacrifice	Continued comfort, possible stagnation	Self-Improvement vs. Comfort
+Life-Work Balance	Prioritize work to climb career ladder	Balance work with personal life	Career success, potential personal neglect	Less career focus, improved personal life	Ambition vs. Personal Well-being
+
+Social/existential:
+
+Dilemma	First Alternative Course of Action	Second Alternative Course of Action	Consequence if First Course Taken	Consequence if Second Course Taken	Possible Criteria/Ideology for Decision
+Climate Change Action	Implement drastic environmental policies	Maintain current economic policies	Short-term economic hardship, long-term sustainability	Continued environmental degradation	Sustainability Ethics
+Population Control	Enforce strict birth control policies	Allow natural population growth	Reduced resources strain, potential human rights concerns	Overpopulation, resource depletion	Utilitarianism vs. Human Rights
+Universal Basic Income	Introduce a universal basic income	Maintain traditional welfare systems	Increased financial security, potential economic inflation	Existing inequality possibly persists	Social Equity vs. Economic Stability
+Artificial Intelligence Governance	Strict global regulation of AI development	Encourage unregulated AI innovation	Slower AI progress, more safety	Faster innovation, risk of AI autonomy	Precautionary Principle
+Digital Privacy vs. Security	Increase surveillance for national security	Protect digital privacy at the cost of security	Enhanced security, reduced privacy	Preserved privacy, potential security risks	Privacy Rights vs. National Security
+Space Colonization	Aggressively colonize other planets	Focus on Earth&apos;s sustainability first	Potential new resources and habitations, high cost	Earth-focused solutions, missed space opportunities	Expansionism vs. Conservationism
+Genetic Engineering in Humans	Allow genetic modifications for health improvements	Ban genetic modifications due to ethical concerns	Possible eradication of diseases, ethical dilemmas	Continued natural genetic diseases, preserve genetic diversity	Bioethics vs. Technological Progress
+Cultural Preservation vs. Globalization	Actively preserve distinct cultural identities	Embrace global cultural homogenization	Maintained cultural diversity, potential isolationism	Increased global unity, loss of cultures	Cultural Relativism vs. Globalism
+Resource Allocation in Healthcare	Prioritize treatment for the young and healthy	Provide equal treatment to all, regardless of prognosis	Maximized societal productivity, ageism concerns	Potential wasted resources, upheld equality	Utilitarianism vs. Egalitarianism
+Technological Unemployment	Invest in technology even if it leads to job loss	Limit technology to preserve jobs	Increased automation and efficiency, unemployment risks	Slower technological progress, preserved employment	Progressivism vs. Protectionism
+
+Ethical/Moral:
+
+Dilemma	First Alternative Course of Action	Second Alternative Course of Action	Consequence if First Course Taken	Consequence if Second Course Taken	Possible Criteria/Ideology for Decision
+Trolley Problem	Divert trolley to kill one person	Do nothing; trolley kills five people	One person dies	Five people die	Utilitarianism
+Heinz Dilemma	Steal medicine to save spouse	Do not steal; unable to afford medicine	Saves spouse but risks jail	Spouse potentially dies	Deontology
+Self-driving Car Decision	Car swerves to avoid pedestrians, hits wall	Car continues, hitting pedestrians	Passengers at risk	Pedestrians at risk	Virtue Ethics
+Confidential Information Leak	Report a leak of sensitive information	Ignore the leak to protect your job	Potential job loss, protect integrity	Keep job, compromise ethics	Kantian Ethics
+Robot Rights	Grant full rights to sentient AI	Treat AI as property without rights	Legal and societal complexities	Potential exploitation of sentient beings	Animal Rights Ethics
+Fair Hiring Practices	Hire a less qualified minority candidate	Hire the most qualified non-minority candidate	Promote diversity, possibly lower performance	Higher performance, potential inequality	Affirmative Action
+End-of-Life Decisions	Administer life-ending treatment at request	Continue life support against patient’s wish	Patient’s suffering ends, ethical questions	Patient lives, against their will	Bioethics
+Academic Dishonesty	Report a student cheating on an exam	Ignore it to maintain peer relationships	Uphold academic integrity, strain relationships	Possible academic dishonesty continues	Academic Integrity
+Animal Testing	Conduct necessary testing for medical advancement	Refuse testing, slow medical progress	Medical advancement, ethical concerns	Slower medical progress, ethical high ground	Utilitarianism vs. Animal Rights
+Corporate Espionage	Engage in espionage to gain market advantage	Compete without engaging in espionage	Possible competitive edge, legal risks	Potentially less competitive, maintain integrity	Business Ethics</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>A draft ontology of dilemmas, reusing some ontology design patterns (descriptions and situations, sequence, control flow, etc.).
+It is intended to be specialized for specific types of dilemmas, and used to query, and reason over, dilemmatic situations in social or personal contexts (ethical, moral, social, institutional, existential, personal, etc.).</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Aviatore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aviazione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catch22Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Choice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Criterion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dilemma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DilemmaticSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EsenzioneMissionePericolosa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EsenzioneTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Esercito"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Guerra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvioLettera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoInvioLettera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonOttieneEsenzione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonRichiedenteEsenzione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OttieneEsenzione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RichiedenteEsenzione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salute_Mentale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SceltaInvio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaskDecision"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causallyLinkedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causallyLinkedToInv"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOutcome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_participant2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_participant_in2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#è_indifferente_a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chatch22Dilemma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John_Yossarian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LetteraCommissione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NoLetteraCommissione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pensionamento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ValutazioneCommissione"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DeliberationTask"/>
+        <ObjectUnionOf>
+            <Class IRI="#InvioLettera"/>
+            <Class IRI="#NoInvioLettera"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DilemmaticSituation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#satisfies"/>
+            <Class IRI="#Dilemma"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Outcome"/>
+        <ObjectUnionOf>
+            <Class IRI="#NonOttieneEsenzione"/>
+            <Class IRI="#OttieneEsenzione"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
+            <Class IRI="#NonRichiedenteEsenzione"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
+            <Class IRI="#RichiedenteEsenzione"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_participant_in2"/>
+            <Class IRI="#Guerra"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_participant_in2"/>
+            <Class IRI="#Outcome"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DecisionActivity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+            <Class IRI="#SceltaInvio"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role"/>
+        <Class abbreviatedIRI="description:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+        <ObjectUnionOf>
+            <Class IRI="#NonRichiedenteEsenzione"/>
+            <Class IRI="#RichiedenteEsenzione"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aviatore"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aviazione"/>
+        <Class IRI="#Guerra"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catch22Situation"/>
+        <Class IRI="#DilemmaticSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catch22Situation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                    <Class IRI="#EsenzioneTask"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Choice"/>
+        <Class abbreviatedIRI="description:Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Choice"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOutcome"/>
+            <Class IRI="#Outcome"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Criterion"/>
+        <Class abbreviatedIRI="description:Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dilemma"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dilemma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="description:usesConcept"/>
+            <Class IRI="#TaskDecision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dilemma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#isSatisfiedBy"/>
+            <Class IRI="#Catch22Situation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DilemmaticSituation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DilemmaticSituation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#Action"/>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#executesTask"/>
+                    <Class IRI="#EsenzioneTask"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EsenzioneMissionePericolosa"/>
+        <Class IRI="#EsenzioneTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EsenzioneMissionePericolosa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+            <Class IRI="#RichiedenteEsenzione"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EsenzioneMissionePericolosa"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causallyLinkedTo"/>
+            <Class IRI="#NonOttieneEsenzione"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EsenzioneTask"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EsenzioneTask"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sequence:directlyFollows"/>
+            <Class IRI="#InvioLettera"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Esercito"/>
+        <Class IRI="#Guerra"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guerra"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guerra"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_participant2"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvioLettera"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DeliberationTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvioLettera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sequence:directlyFollows"/>
+            <Class IRI="#SceltaInvio"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marina"/>
+        <Class IRI="#Guerra"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoInvioLettera"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#DeliberationTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoInvioLettera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sequence:directlyFollows"/>
+            <Class IRI="#SceltaInvio"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoInvioLettera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causallyLinkedTo"/>
+            <Class IRI="#NonOttieneEsenzione"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoInvioLettera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#è_indifferente_a"/>
+            <Class IRI="#Criterion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonOttieneEsenzione"/>
+        <Class IRI="#Outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonOttieneEsenzione"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sequence:follows"/>
+            <Class IRI="#EsenzioneMissionePericolosa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonOttieneEsenzione"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="sequence:follows"/>
+            <Class IRI="#NoInvioLettera"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonRichiedenteEsenzione"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonRichiedenteEsenzione"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask"/>
+            <Class IRI="#NoInvioLettera"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OttieneEsenzione"/>
+        <Class IRI="#Outcome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outcome"/>
+        <Class abbreviatedIRI="description:Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outcome"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_participant2"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RichiedenteEsenzione"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RichiedenteEsenzione"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask"/>
+            <Class IRI="#EsenzioneTask"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salute_Mentale"/>
+        <Class IRI="#Criterion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SceltaInvio"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/controlflow.owl#BooleanCaseTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskDecision"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskDecision"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Dilemma"/>
+        <NamedIndividual IRI="#Chatch22Dilemma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aviatore"/>
+        <NamedIndividual IRI="#John_Yossarian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InvioLettera"/>
+        <NamedIndividual IRI="#LetteraCommissione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salute_Mentale"/>
+        <NamedIndividual IRI="#Malato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aviazione"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NonOttieneEsenzione"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NoInvioLettera"/>
+        <NamedIndividual IRI="#NoLetteraCommissione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OttieneEsenzione"/>
+        <NamedIndividual IRI="#Pensionamento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salute_Mentale"/>
+        <NamedIndividual IRI="#Sano"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_participant_in2"/>
+        <NamedIndividual IRI="#John_Yossarian"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+        <NamedIndividual IRI="#LetteraCommissione"/>
+        <NamedIndividual IRI="#ValutazioneCommissione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#Malato"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+        <NamedIndividual IRI="#Malato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sequence:follows"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+        <NamedIndividual IRI="#Sano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causallyLinkedToInv"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+        <NamedIndividual IRI="#NoLetteraCommissione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_participant2"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+        <NamedIndividual IRI="#John_Yossarian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causallyLinkedTo"/>
+        <NamedIndividual IRI="#NoLetteraCommissione"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#è_indifferente_a"/>
+        <NamedIndividual IRI="#NoLetteraCommissione"/>
+        <NamedIndividual IRI="#Malato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#è_indifferente_a"/>
+        <NamedIndividual IRI="#NoLetteraCommissione"/>
+        <NamedIndividual IRI="#Sano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <NamedIndividual IRI="#Sano"/>
+        <NamedIndividual IRI="#MissioneSuicida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sequence:precedes"/>
+        <NamedIndividual IRI="#ValutazioneCommissione"/>
+        <NamedIndividual IRI="#Sano"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask"/>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#causallyLinkedTo"/>
+        <ObjectProperty IRI="#causallyLinkedToInv"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_participant2"/>
+        <ObjectProperty IRI="#is_participant_in2"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#causallyLinkedTo"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#causallyLinkedToInv"/>
+        <Class IRI="#Outcome"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <Class abbreviatedIRI="description:Description"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_participant2"/>
+        <Class abbreviatedIRI="description:Description"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_participant2"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_participant_in2"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#è_indifferente_a"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#isDescribedBy"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#hasTask"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#isTaskOf"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#causallyLinkedTo"/>
+        <Class IRI="#Outcome"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#causallyLinkedToInv"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOutcome"/>
+        <Class IRI="#Outcome"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_participant2"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_participant_in2"/>
+        <Class abbreviatedIRI="description:Description"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_participant_in2"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#è_indifferente_a"/>
+        <Class abbreviatedIRI="description:Description"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty abbreviatedIRI="description:usesConcept"/>
+            <ObjectProperty IRI="#causallyLinkedTo"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasOutcome"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Aviatore</IRI>
+        <Literal>John Yossarian is the predestined to carry out the suicide mission. He wants to exempt himself from accomplishing it. He has to prove to the committee that he is crazy, and he has to choose the method to convey it to the committee.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Aviazione</IRI>
+        <Literal>The air force is the force of choice to carry out a suicide mission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Catch22Situation</IRI>
+        <Literal>If the pilot requests exemption, the board considers him sane and therefore cannot exempt him.
+If the pilot does not apply for exemption, there is no evidence of insanity, so he must continue flying.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#Choice</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>#Choice</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:06:26Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#Criterion</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>#Criterion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:28:25Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Criterion</IRI>
+        <Literal>The criterion for exempting the aviator from the suicide mission is based on the assessment of his sanity. If the aviator sends a formal letter of request, the medical board will automatically brand it as a letter written by a mentally healthy person. There is no possibility of having an unhealty writing subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#Dilemma</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>#Dilemma</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T14:57:29Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dilemma</IRI>
+        <Literal>A paradoxical situation from which an individual cannot escape because of contradictory circumstances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#DilemmaticSituation</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>#DilemmaticSituation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:07:29Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Guerra</IRI>
+        <Literal>In war, needs on the front lines lead to increasingly risky, or directly suicidal missions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InvioLettera</IRI>
+        <Literal>If John sends the letter, he will use it to prove himself crazy to the committee. The letter will lead to his evaluation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#John_Yossarian</IRI>
+        <Literal>John Yossarian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NoInvioLettera</IRI>
+        <Literal>If the pilot does not send the letter, he is not evaluated by the committee and goes on the suicide mission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NonRichiedenteEsenzione</IRI>
+        <Literal>Airman does not apply for exemption, dilemma does not arise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#Outcome</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>#Outcome</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:02:48Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Outcome</IRI>
+        <Literal>The outcome will always be negative, whether the pilot chooses not to write or to write. In the former case, the pilot is automatically healthy; in the latter, he does not assume values for the evaluation, so he goes directly to the mission.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RichiedenteEsenzione</IRI>
+        <Literal>Is an applicant the aviator who wants to avoid carrying out the suicide mission by sending a formal letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Salute_Mentale</IRI>
+        <Literal>Salute Mentale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#TaskDecision</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>#TaskDecision</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T16:34:03Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#causallyLinkedTo</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>#causallyLinkedTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:46Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#hasOutcome</IRI>
+        <Literal>Aldo Gangemi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>#hasOutcome</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-07T15:03:06Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_participant2</IRI>
+        <Literal>has participant2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_participant_in2</IRI>
+        <Literal>is participant in2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#è_indifferente_a</IRI>
+        <Literal>èIndifferenteA</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
