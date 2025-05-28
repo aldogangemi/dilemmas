@@ -1,0 +1,1613 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/"
+     xml:base="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#completesTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#completesTask">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#followsMoralCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#followsMoralCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasAffiliation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasAffiliation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Affiliation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasAttitude -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasAttitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Attitude"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasCurrentTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasCurrentTask">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasOutcome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerAction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#influences -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#influences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralCode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Strategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#leadsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#leadsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Strategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerDilemma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsTask">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#playsWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#playsWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#precedesTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#precedesTask">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#resultFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#resultFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Outcome"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Strategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskInfluences -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskInfluences">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Strategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskLeadsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskLeadsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskRequires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskRequires">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#codeStrength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#codeStrength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralCode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#prisonYears -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#prisonYears">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#prisonerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#prisonerName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskCompleted -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskCompleted">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#taskPriority">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Affiliation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Affiliation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Attitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Attitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#ConditionEvaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#ConditionEvaluation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerDilemma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Strategy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#DecisionTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#DecisionTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Strategy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Disloyal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Disloyal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Attitude"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangAffiliation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangAffiliation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Affiliation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangBrother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangBrother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Role"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Snitch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralCode"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Individualism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Individualism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Individualism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralCode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#JailerQuestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#JailerQuestion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerDilemma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Attitude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerDilemma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoiceTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoiceTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OptionEvaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OptionEvaluation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerDilemma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OptionEvaluationTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OptionEvaluationTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Outcome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Outcome"/>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OutcomeEvaluationTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OutcomeEvaluationTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prison -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerDilemma"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Outcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerAction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerDilemma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerDilemma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Snitch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Snitch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Speaking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Speaking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Communication"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StayingSilent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StayingSilent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StayingSilent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Communication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Strategy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StrategySelectionTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StrategySelectionTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Task"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Decision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Decision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#DecisionTask"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Disloyal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Disloyal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Disloyal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#EvaluatingOutcome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#EvaluatingOutcome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OutcomeEvaluationTask"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangAffiliation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangAffiliation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangAffiliation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangBrother -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangBrother">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangBrother"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Individualism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Individualism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Individualism"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#JailerQuestion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#JailerQuestion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#JailerQuestion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyalty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyalty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OptionEvaluationTask -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OptionEvaluationTask">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OptionEvaluationTask"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prison"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <untitled-ontology-9:prisonerName>A</untitled-ontology-9:prisonerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+        <untitled-ontology-9:prisonerName>B</untitled-ontology-9:prisonerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonersDilemma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonersDilemma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonerDilemma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#SelfInterest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#SelfInterest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Individualism"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Snitch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Snitch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Snitch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Speaking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Speaking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Speaking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StayingSilent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StayingSilent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StayingSilent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StrategySelection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StrategySelection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StrategySelectionTask"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#0YearsJail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#0YearsJail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonTime"/>
+        <untitled-ontology-9:prisonYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</untitled-ontology-9:prisonYears>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#1YearsJail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#1YearsJail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonTime"/>
+        <untitled-ontology-9:prisonYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-9:prisonYears>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#2YearsJail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#2YearsJail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonTime"/>
+        <untitled-ontology-9:prisonYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-9:prisonYears>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#3YearsJail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#3YearsJail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#PrisonTime"/>
+        <untitled-ontology-9:prisonYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-9:prisonYears>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/stratsel">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/evaluation">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/moralchoice">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>è la sequenza logica di ciò che si aspetta che sia il fenomeno di scelta di un prigioniero, prima valuterà la situazione, poi sceglierà il codice morale e infine la strategia da applicare</rdfs:comment>
+        <rdfs:label>valutazione-morale-strategia</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StrategySelectionTask"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/stratsel"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OptionEvaluationTask"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/evaluation"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoiceTask"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/moralchoice"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#precedesTask"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/moralchoice"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/stratsel"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#precedesTask"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/evaluation"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/moralchoice"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>se prig ha affiliazione allora è leale</rdfs:comment>
+        <rdfs:label>Prig affiliato è leale</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasAffiliation"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangAffiliation"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasAttitude"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Se il prig valuta opzioni e si affilia alla gang allora farà anche la scelta morale e seguirà il gangcode</rdfs:comment>
+        <rdfs:label>Cosa sceglie il prigioniero</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsTask"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#OptionEvaluationTask"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasAffiliation"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangAffiliation"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsTask"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoice"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#followsMoralCode"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Se il prigioniero snitcha allora sceglierà strat Tradimento E sarà Ruolo Snitch</rdfs:comment>
+        <rdfs:label>Parlare rende traditori</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsAction"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Speaking"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasRole"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Snitch"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>se i due prigionieri scelgono strat di coop entrambi, sapendo di giocare assieme, allora avranno rispettivamente 1 anno di prig a testa</rdfs:comment>
+        <rdfs:label>Cooperazione</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#playsWith"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasOutcome"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#1YearsJail"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasOutcome"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#1YearsJail"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>se uno parla e l&apos;altro (uno coop altro defect) allora quello che parla è libero e l&apos;altro 3 anni prig</rdfs:comment>
+        <rdfs:label>Tradimento</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#playsWith"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasOutcome"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#3YearsJail"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasOutcome"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#0YearsJail"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>ENTRAMBI tradiscono, scelgono entrambi strat defect e quindi 2 anni jail a entrambi (sfigati)</rdfs:comment>
+        <rdfs:label>Tradimento DOPPIO</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#playsWith"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasOutcome"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#2YearsJail"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasOutcome"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#2YearsJail"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>se il prigioniero segue il gangcode allora coopera</rdfs:comment>
+        <rdfs:label>Avere Codice gang influenza strat</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#followsMoralCode"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>se un prig sta zitto E segue il codice gang, allora coopera E è GangBro</rdfs:comment>
+        <rdfs:label>Silenzio per la gang significa lealtà</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsAction"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StayingSilent"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#followsMoralCode"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasRole"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangBrother"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>se prig fa moralchoice E segue gang allora segue strat E questa è cooperazione!</rdfs:comment>
+        <rdfs:label>Da morale a strat coop</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsTask"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#MoralChoice"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#followsMoralCode"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangCode"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#performsTask"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#StrategySelection"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Cooperation"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>se prig segue individualismo (sto sfigato) allora userà strat defect (e snitcherà poi per regole di cui sopra)</rdfs:comment>
+        <rdfs:label>Individualismo influenza strat</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#followsMoralCode"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Individualism"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasStrategy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Defection"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>se prig ha GangAffiliation allora avrà Attitude Loyal</rdfs:comment>
+        <rdfs:label>Affiliato quindi leale</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Prisoner"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasAffiliation"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#GangAffiliation"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#hasAttitude"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#Loyal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
