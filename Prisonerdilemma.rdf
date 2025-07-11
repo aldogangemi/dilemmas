@@ -10,7 +10,7 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:Prisonerdilemma="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#"
-     xmlns:untitled-ontology-9="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9#">
+     xmlns:Prisonerdilemma="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma">
         <rdfs:comment>Questa è un&apos;ontologia costruita sul Dilemma del Prigioniero, modellando la il dominio di questa situazione dilemmatica di due agenti prigionieri e le azioni e strategie che compiono per risolvere il dilemma, con i loro status psicologici e sociali, le situazioni dilemmatiche in sé e le azioni che devono prendere per risolverla. Nel pratico se decidono di parlare o meno alle guardie facendo o meno la spia sull&apos;altro prigioniero, e in base allo stato di parola di entrambi viene decisa una diversa soluzione al loro status di prigioniero. Nel farlo copro aspetti di strategia, moralità, affiliazione sociale e decisionale di quei contesti carcerari criminali e delle dinamiche di cooperazione o individualismo che portano a determinate scelte sulla libertà o su un codice d&apos;onore</rdfs:comment>
     </owl:Ontology>
@@ -1012,22 +1012,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/stratsel">
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/stratsel">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/outcome">
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/outcome">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/evaluation">
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/evaluation">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/decision">
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/decision">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y">
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x">
+    <rdf:Description rdf:about="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -1042,7 +1042,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#followsMoralCode"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#GangCode"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1053,7 +1053,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#StayingSilent"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1064,7 +1064,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OutcomeEvaluationTask"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1075,7 +1075,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                 <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1094,7 +1094,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasRole"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#GangBrother"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1105,7 +1105,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Cooperation"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1116,7 +1116,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MoralChoice"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1140,7 +1140,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#followsMoralCode"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#GangCode"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1151,7 +1151,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#StrategySelectionTask"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1162,7 +1162,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1179,7 +1179,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Cooperation"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1190,7 +1190,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MoralChoice"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1212,7 +1212,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#followsMoralCode"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Individualism"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1223,7 +1223,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#StrategySelectionTask"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1234,7 +1234,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1251,7 +1251,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Defection"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1262,7 +1262,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MoralChoice"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1284,7 +1284,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#DecisionTask"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1295,7 +1295,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1305,7 +1305,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasAffiliation"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#GangAffiliation"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1323,7 +1323,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasAttitude"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Loyal"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1334,7 +1334,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#ConditionEvaluation"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1356,7 +1356,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#DecisionTask"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1367,7 +1367,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1377,7 +1377,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasAffiliation"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#GangAffiliation"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1395,7 +1395,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasAttitude"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Loyal"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1406,7 +1406,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#ConditionEvaluation"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1428,7 +1428,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Cooperation"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1439,7 +1439,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Cooperation"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1450,7 +1450,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OutcomeEvaluationTask"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1461,7 +1461,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OutcomeEvaluationTask"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -1472,8 +1472,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#playsWith"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
-                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1483,7 +1483,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1493,7 +1493,7 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1518,7 +1518,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#StayingSilent"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1529,7 +1529,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#StayingSilent"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1540,7 +1540,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MutualCooperation"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1551,7 +1551,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MutualCooperation"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -1562,7 +1562,7 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#1YearsJail"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -1573,7 +1573,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#1YearsJail"/>
                                                             </rdf:Description>
                                                         </rdf:first>
@@ -1603,7 +1603,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OptionEvaluationTask"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1614,7 +1614,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1624,7 +1624,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasAffiliation"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#GangAffiliation"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1642,7 +1642,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#followsMoralCode"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#GangCode"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1653,7 +1653,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MoralChoice"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1675,7 +1675,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OutcomeEvaluationTask"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1686,7 +1686,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Speaking"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1697,7 +1697,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1714,7 +1714,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Defection"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1725,7 +1725,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MoralChoice"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1736,7 +1736,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasRole"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Snitch"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1760,7 +1760,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#StrategySelectionTask"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/stratsel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/stratsel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1770,7 +1770,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OutcomeEvaluationTask"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/outcome"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/outcome"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1780,7 +1780,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OptionEvaluationTask"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/evaluation"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/evaluation"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1790,7 +1790,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                 <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#DecisionTask"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/decision"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/decision"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1809,8 +1809,8 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#precedesTask"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/evaluation"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/stratsel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/evaluation"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/stratsel"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1820,8 +1820,8 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#precedesTask"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/decision"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/evaluation"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/decision"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/evaluation"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1831,8 +1831,8 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#precedesTask"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/stratsel"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/outcome"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/stratsel"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/outcome"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1855,7 +1855,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Cooperation"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1866,7 +1866,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Defection"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1877,7 +1877,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OutcomeEvaluationTask"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1888,7 +1888,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OutcomeEvaluationTask"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -1899,8 +1899,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#playsWith"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
-                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1910,7 +1910,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1920,7 +1920,7 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1945,7 +1945,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#StayingSilent"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1956,7 +1956,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OneCooperatesOneDefects"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1967,7 +1967,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OneCooperatesOneDefects"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -1978,7 +1978,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#0YearsJail"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -1989,7 +1989,7 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Speaking"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -2000,7 +2000,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#3YearsJail"/>
                                                             </rdf:Description>
                                                         </rdf:first>
@@ -2030,7 +2030,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Defection"/>
                     </rdf:Description>
                 </rdf:first>
@@ -2041,7 +2041,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Defection"/>
                             </rdf:Description>
                         </rdf:first>
@@ -2052,7 +2052,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OutcomeEvaluationTask"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -2063,7 +2063,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#OutcomeEvaluationTask"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -2074,8 +2074,8 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#playsWith"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
-                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -2085,7 +2085,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                 <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -2095,7 +2095,7 @@
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                                                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -2120,7 +2120,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MutualDefection"/>
                     </rdf:Description>
                 </rdf:first>
@@ -2131,7 +2131,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MutualDefection"/>
                             </rdf:Description>
                         </rdf:first>
@@ -2142,7 +2142,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#2YearsJail"/>
                                     </rdf:Description>
                                 </rdf:first>
@@ -2153,7 +2153,7 @@
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasOutcome"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#2YearsJail"/>
                                             </rdf:Description>
                                         </rdf:first>
@@ -2164,7 +2164,7 @@
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Speaking"/>
                                                     </rdf:Description>
                                                 </rdf:first>
@@ -2175,7 +2175,7 @@
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/y"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/y"/>
                                                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Speaking"/>
                                                             </rdf:Description>
                                                         </rdf:first>
@@ -2205,7 +2205,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#followsMoralCode"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#GangCode"/>
                     </rdf:Description>
                 </rdf:first>
@@ -2216,7 +2216,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#MoralChoice"/>
                             </rdf:Description>
                         </rdf:first>
@@ -2227,7 +2227,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                                         <swrl:classPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Prisoner"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -2244,7 +2244,7 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsAction"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Communication"/>
                     </rdf:Description>
                 </rdf:first>
@@ -2255,7 +2255,7 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                 <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#hasStrategy"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#Cooperation"/>
                             </rdf:Description>
                         </rdf:first>
@@ -2266,7 +2266,7 @@
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#performsTask"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/untitled-ontology-9/x"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma/x"/>
                                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/giacomo/ontologies/2025/4/Prisonerdilemma#StrategySelectionTask"/>
                                     </rdf:Description>
                                 </rdf:first>
